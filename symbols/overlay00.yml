@@ -47,9 +47,9 @@ overlay0:
       description: |-
         Seems to run immediately before the actual entry point. Called by SetGameState.
         
-        r0: undefined4 
+        r0: undefined4
         r1: megastruct pointer
-        r2: undefined4 
+        r2: undefined4
         r3: undefined4
     - name: OpenAndInitMapScriptFile
       address:
@@ -73,7 +73,7 @@ overlay0:
         Seems to open and initialize a file of the form: "data/field/map/%s.map.lz", "data/field/map/%s.map.dat.lz", or "data/field/map/%s.map.tex.lz".
         
         r0: unk_struct_size_0x80 pointer
-        r1: undefined4 
+        r1: undefined4
         r2: char pointer. Maybe a file name?
         r3: int32_t
     - name: ret_021266ac
@@ -118,7 +118,7 @@ overlay0:
         Seems to open, init, and process a script file of the form "data/Script/field/poketargetclear/ptc%03d_%02d.fsb" into a struct.
         
         r0: void pointer
-        r1: int32_t 
+        r1: int32_t
         r2: int32_t
     - name: MaybeOpenAndInitTargetObjectTouchScript
       address:
@@ -148,6 +148,7 @@ overlay0:
         NA: 0x21427EC
       description: |-
         Does nothing but return. Likely a debug hook for a nearby function.
+        This is the 6th virtual member function of CFieldEffectFactory inheritors.
         
         No params.
     - name: ret_02142ab0
@@ -155,6 +156,7 @@ overlay0:
         NA: 0x2142AB0
       description: |-
         Does nothing but return. Likely a debug hook for a nearby function.
+        This is the 4th virtual member function of CFieldEffectFactory inheritors.
         
         No params.
     - name: ret_0214340c
@@ -162,6 +164,7 @@ overlay0:
         NA: 0x214340C
       description: |-
         Does nothing but return. Likely a debug hook for a nearby function.
+        This is the 5th virtual member function of CFieldEffectFactory inheritors.
         
         No params.
     - name: ret_02143ae0
@@ -702,9 +705,9 @@ overlay0:
       description: |-
         Seems to be a debug function that prints partner poke assist record data.
         
-        r0: int32_t 
-        r1: undefined4 
-        r2: undefined4 
+        r0: int32_t
+        r1: undefined4
+        r2: undefined4
         r3: undefined4
     - name: GetCaptureLineLenRecordSimple
       address:
@@ -787,7 +790,7 @@ overlay0:
       address:
         NA: 0x214F99C
       description: |-
-        Retrieves the poke assist record for the current partner from RANGER_DATA. 
+        Retrieves the poke assist record for the current partner from RANGER_DATA.
         
         No params.
     - name: ret_0215061c
